@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--color1: #f96635;
+	--color2: #f9a822;
+	--color3: #faecb6;
+	--color4: #93d3ae;
+	--color5: #2bbaa5;
+
+	--bgColor: var(--color3);
+}
+.ruslan {
+	font-family: "Ruslan Display", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	/* font-size: 3rem; */
+}
+body {
+	font-family: "Bricolage Grotesque", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+	font-size: 1.5rem;
+}

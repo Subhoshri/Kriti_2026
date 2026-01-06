@@ -1,0 +1,83 @@
+.bottom-section {
+    text-align: center;
+    margin-top: 8rem;
+    max-height: fit-content;
+    width: 100%;
+    position: relative;
+}
+
+.bottom-section h1 {
+    font-size: 4rem;
+    font-family: "Ruslan Display", sans-serif;
+    font-weight: 400;
+    z-index: 2;
+}
+
+.bottom-section p {
+    font-size: 2rem;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.bottom-section .team-image {
+    width: 100%;
+    /* height: 100%; */
+    position: relative;
+    z-index: 2;
+}
+
+.bottom-section .sunshine {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.bottom-section .team-scage {
+    position: absolute;
+    z-index: 3; 
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-wrap: nowrap;
+    opacity: 70%;
+    font-size: 5rem;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+    .bottom-section {
+        margin-top: 4rem;
+    }
+
+    .bottom-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .bottom-section p {
+        font-size: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .bottom-section .team-scage {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bottom-section h1 {
+        font-size: 2rem;
+    }
+
+    .bottom-section p {
+        font-size: 1.2rem;
+    }
+
+    .bottom-section .team-scage {
+        font-size: 2rem;
+    }
+}

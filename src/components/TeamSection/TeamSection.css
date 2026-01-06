@@ -1,0 +1,30 @@
+/* src/components/TeamSection.css */
+.team {
+    padding: 20px;
+    text-align: center;
+
+    /* ----- remove this if needed ---- */
+    /* I added to prevent overlap */
+    padding-top: 10vh;
+}
+
+.team h2 {
+    font-family: "Playfair Display", serif;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    margin: 10px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 50%; /* Optional: for circular images */
+}

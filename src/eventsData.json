@@ -1,0 +1,88 @@
+{
+    "events": [
+        {
+            "eventName": "Eco Design",
+            "eventDescription": "Step up and share your vision for a sustainable future at the PPT Competition on Sustainable Development! This event invites participants to create compelling presentations that explore innovative solutions, strategies, and ideas for a greener, more sustainable world. Whether it’s tackling climate change, promoting renewable energy, or advancing eco-friendly practices, this competition challenges you to think critically and creatively about the global sustainability movement. Use your research, insights, and passion to inspire others and make a difference. Join us in presenting your ideas and be part of the conversation for a more sustainable tomorrow!",
+            "eventImage": "./imgs/Events/EcoDesign.png",
+            "isReversed": false,
+            "eventLink": "https://forms.gle/PfsGZkANmgdY9dzS9"
+        },
+        {
+            "eventName": "Mud and Masterpieces",
+            "eventDescription": "This is a hands-on session that invites you to shape your ideas into tangible works of art. Mold and sculpt clay into your desired form, then bring it to life with vibrant colors through painting. Whether you’re crafting a sculpture or a decorative piece, this workshop encourages self-expression and creative exploration. No prior experience needed—just bring your imagination and let the clay become your canvas. Join us for a fun, interactive experience where you’ll create unique, personalized artworks to take home!",
+            "eventImage": "./imgs/Events/Mud.png",
+            "isReversed": true,
+            "eventLink": "https://forms.gle/UocmFkhUMni8QYUY8"
+        },
+        {
+            "eventName": "Graffiti Groove",
+            "eventDescription": "Step into the world of street art and transform blank walls into bold, vibrant expressions of creativity. Whether you’re an experienced graffiti artist or new to the medium, this is your chance to experiment with spray paint, stencils, and bold designs. Graffiti is more than just art; it’s a powerful form of self-expression that challenges conventions and speaks to the urban experience. Work individually or collaborate with others to create a mural that reflects your unique style and voice. Come ready to make your mark in a colorful and dynamic environment!",
+            "eventImage": "./imgs/Events/Graffiti.png",
+            "isReversed": false,
+            "eventLink": "https://forms.gle/pt5he9AqTb3KihJc9"
+        },
+        {
+            "eventName": "Fingers in Focus",
+            "eventDescription": "Get ready to turn your face or hands into a living canvas! This activity invites participants to explore the art of body painting, where you can choose to have your face or hands painted with intricate designs, vibrant colors, or whimsical patterns. Whether you want to go for bold, artistic, or something playful, our talented artists will help bring your vision to life. It’s a unique way to express yourself and add a colorful touch to your day. Come join the fun and let your imagination shine!",
+            "eventImage": "./imgs/Events/FingersInFocus.png",
+            "isReversed": true,
+            "eventLink": "https://forms.gle/TL3BPGjLLR4XbX2LA"
+        },
+        {
+            "eventName": "Picture Perfect",
+            "eventDescription": "Picture Perfect is a documentary film screening designed to inspire and ignite the creative spirit within students. Through powerful storytelling, this event showcases individuals, innovators, and movements that have shaped the world with their creativity and vision. By highlighting the transformative power of innovation, Picture Perfect encourages students to think boldly, challenge the status quo, and harness their own potential to make a meaningful impact. Join us for an inspiring cinematic journey that celebrates creativity, determination, and the drive to innovate!",
+            "eventImage": "./imgs/Events/PicPerf.png",
+            "isReversed": false,
+            "eventLink": "https://forms.gle/3Wg4cyb5odscvcUGA"
+        },
+        {
+            "eventName": "Rust to Riches",
+            "eventDescription": "Welcome to the Scrapyard, where creativity meets sustainability! In this exciting activity, participants will transform discarded materials into unique, imaginative works of art. Using everyday items like bottle caps, old magazines, fabric scraps, and more, you’ll craft something beautiful, functional, or entirely abstract. The Scrapeyard challenges you to think outside the box and see the potential in materials that are often overlooked. Embrace the thrill of creativity and innovation as you bring new life to what others may consider waste!",
+            "eventImage": "./imgs/Events/RustToRiches.png",
+            "isReversed": true,
+            "eventLink": "https://forms.gle/bcoegxqKhxEwGaEKA"
+        },
+        {
+            "eventName": "Mindful Meadows",
+            "eventDescription": "Join us in the Mindful Meadows to explore the intersection of art and mental health. This session focuses on using sketching as a therapeutic medium to express emotions, relieve stress, and foster self-awareness. Guided by skilled artists and mental health advocates, participants will learn sketching techniques to translate thoughts and emotions onto paper and understand how creative expression contributes to mental well-being. Just bring an open mind and your willingness to create. Let’s draw out the conversation around mental health and well-being!",
+            "eventImage": "./imgs/Events/MindMeadows.png",
+            "isReversed": false,
+            "eventLink": "https://forms.gle/pxii1EkWwTAueMvW9"
+        },
+        {
+            "eventName": "Vouge-E-Bella",
+            "eventDescription": "Participants are challenged to design and create a one-of-a-kind fashion piece that reflects their unique style and creativity. After crafting their masterpiece, designers will have the opportunity to showcase their work on the runway, wearing their own creations. The event celebrates the fusion of artistry and fashion, with each participant bringing their vision to life for a chance to win the title of the ultimate fashion designer. The competition is a platform for innovation, self-expression, and style.",
+            "eventImage": "./imgs/Events/Vogue-e-Bella.png",
+            "isReversed": true,
+            "eventLink": "https://forms.gle/kgH29uLnTbeEDnvp7"
+        },
+        {
+            "eventName": "Art of Odyssey",
+            "eventDescription": "Immerse yourself in a world of color, emotion, and imagination at the Art Exhibition. This exhibition showcases the talent, vision, and creativity of our members, offering a glimpse into their artistic journeys. From paintings and sketches to digital art and mixed media, each piece tells its own unique story. It’s a space for reflection, inspiration, and conversation about the diverse ways art can express ideas and emotions. Come explore, appreciate, and connect with the creative expressions of our community.",
+            "eventImage": "./imgs/Events/Odyssey.png",
+            "isReversed": false,
+            "eventLink": "https://forms.gle/KTGsxPksgrBDu5D26"
+        },
+        {
+            "eventName": "Fragmented Fantasies",
+            "eventDescription": "Join us for a collaborative artistic journey at the Mosaic Art Booth! Over the course of three days, students from across campus will come together to create a powerful piece of environmental propaganda art. Each participant will paint a section of the board, contributing to a collective masterpiece that promotes environmental awareness and creative expression. This event is a celebration of teamwork, where every brushstroke adds to a larger vision of sustainability. Be a part of this inspiring project, and help create a visual statement that speaks to the future of our planet!",
+            "eventImage": "./imgs/Events/FragmentedFantasies.png",
+            "isReversed": true,
+            "eventLink": "#"
+        },
+        {
+            "eventName": "ArtCade",
+            "eventDescription": "Get ready for a whirlwind of creativity and excitement at Artcade! This fun-filled event brings together a variety of interactive games designed to spark your imagination and test your skills. Participants can engage in playful challenges that blend art with friendly competition, offering the perfect opportunity to unwind and showcase creativity. With a mix of light-hearted challenges and creative twists, Artcade promises fun for everyone. Join in for a memorable experience full of surprises, laughter, and creative fun!",
+            "eventImage": "./imgs/Events/Artcade.png",
+            "isReversed": false,
+            "eventLink": "#"
+        },
+        {
+            "eventName": "The Little Doodle Shop",
+            "eventDescription": "This interactive art exchange fosters a spirit of creativity, connection, and mutual inspiration. It’s more than just swapping drawings—it’s a celebration of individual expression and a way to appreciate diverse perspectives. By sharing your art, you contribute a piece of your imagination to the collective canvas, and by choosing someone else’s work, you carry home a fragment of their creativity. Each card on the wall tells a unique story, reflecting the emotions, ideas, and styles of the participants. Whether you’re an experienced artist or simply someone who loves to doodle, this booth is a reminder that art is a universal language that brings people together. So, let your creativity flow, leave your mark, and be inspired by the vibrant community around you!",
+            "eventImage": "./imgs/Events/DoodleShop.png",
+            "isReversed": true,
+            "eventLink": "#"
+        }
+    ]
+}

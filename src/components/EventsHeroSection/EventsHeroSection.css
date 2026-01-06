@@ -1,0 +1,110 @@
+.EventsHero-section {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    /* padding: 15rem 5rem 10rem 5rem; */
+}
+
+/* .EventsHero-section .details {
+} */
+
+.EventsHero-section img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.EventsHero-section .details {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    margin-bottom: 3rem;
+}
+
+.EventsHero-section .text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    /* position: relative; */
+    height: 100%;
+    width: 100%;
+    padding: 15rem 5rem 10rem 5rem;
+}
+
+.EventsHero-section .text h1 {
+    /* font-size: 100px; */
+    font-size: 5rem;
+    /* font-family: "Ruslan Display", sans-serif; */
+    font-weight: 400;
+    z-index: 2;
+}
+
+.EventsHero-section .text p {
+    font-size: 2rem;
+    font-weight: 600;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    .EventsHero-section .details {
+        font-size: 1.2rem;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .EventsHero-section .text {
+        padding: 10rem 5rem 3rem 5rem;
+        text-wrap: nowrap;
+    }
+    
+    .EventsHero-section .text h1 {
+        font-size: 3rem;
+    }
+
+    .EventsHero-section .text p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 586px) {
+    .EventsHero-section .text {
+        padding: 10rem 2rem 2.5rem 2rem;
+    }
+
+    .EventsHero-section .text h1 {
+        font-size: 2.8rem;
+    }
+}    
+
+@media (max-width: 480px) {
+    .EventsHero-section .details {
+        font-size: 0.9rem;
+        top: 0.5rem;
+        right: 0.5rem;
+    }
+
+    .EventsHero-section .text {
+        padding: 10rem 2rem 2.5rem 2rem;
+    }
+    
+    .EventsHero-section .text h1 {
+        font-size: 2.5rem;
+    }
+
+    .EventsHero-section .text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .EventsHero-section .text {
+        padding: 10rem 0rem 2.5rem 1rem;
+    }
+
+    .EventsHero-section .text h1 {
+        font-size: 2rem;
+    }
+}
