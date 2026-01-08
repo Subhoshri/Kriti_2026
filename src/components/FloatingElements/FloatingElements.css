@@ -1,0 +1,102 @@
+.floating-elements {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.floating-element {
+    position: absolute;
+    transition: transform 40ms ease-out;
+}
+
+/* Star 1 — Top right area */
+.floating-star-1 {
+    top: 8%;
+    right: 12%;
+    z-index: 2;
+    opacity: 0.85;
+}
+
+/* Ink Blot 1 — Left side, mid-height */
+.floating-blot-1 {
+    top: 35%;
+    left: 5%;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+/* Arrow 1 — Top center-left */
+.floating-arrow-1 {
+    top: 15%;
+    left: 8%;
+    z-index: 3;
+    opacity: 0.8;
+}
+
+/* Star 2 — Bottom right area */
+.floating-star-2 {
+    bottom: 20%;
+    right: 8%;
+    z-index: 2;
+    opacity: 0.75;
+}
+
+/* Ink Blot 2 — Right side, lower section */
+.floating-blot-2 {
+    bottom: 15%;
+    right: 25%;
+    z-index: 1;
+    opacity: 0.65;
+}
+
+/* Arrow 2 — Center right */
+.floating-arrow-2 {
+    top: 50%;
+    right: 5%;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1200px) {
+    .floating-star-1 {
+        top: 10%;
+        right: 8%;
+    }
+
+    .floating-blot-1 {
+        top: 40%;
+        left: 3%;
+    }
+
+    .floating-arrow-1 {
+        top: 20%;
+        left: 5%;
+    }
+
+    .floating-star-2 {
+        bottom: 25%;
+        right: 5%;
+    }
+
+    .floating-blot-2 {
+        bottom: 20%;
+        right: 20%;
+    }
+
+    .floating-arrow-2 {
+        top: 55%;
+        right: 3%;
+    }
+}
+
+@media (max-width: 768px) {
+    .floating-elements {
+        display: none;
+    }
+}

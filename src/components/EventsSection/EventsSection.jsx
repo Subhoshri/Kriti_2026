@@ -1,29 +1,33 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./EventsSection.css";
 import Button from "../Button/Button";
+import eventsData from "../../eventsData.json";
 
 const EventsSection = () => {
     return (
         <section className="event-section">
             <h1 className="ruslan">OUR EVENTS</h1>
+
             <div className="events">
-                <div className="item">ECO-VISION •</div>
-                <div className="item">MUDS AND MASTERPIECES •</div>
-                <div className="item">GRAFFITI GROOVE •</div>
-                <div className="item">FINGERS IN FOCUS •</div>
-                <div className="item">PICTURE PERFECT •</div>
-                <div className="item">RUST TO RICHES •</div>
-                <div className="item">MINDFUL MEADOWS •</div>
-                <div className="item">VOUGE-E-BELLA •</div>
-                <div className="item">ART OF ODYSSEY •</div>
-                <div className="item">FRAGMENTED FANTASIES •</div>
-                <div className="item">ART-CADE •</div>
-                <div className="item">THE LITTLE DOODLE SHOP</div>
+                {eventsData.events.map((ev, idx) => (
+                    <div
+                        key={ev.eventName + idx}
+                        className={`event-card ${idx % 2 === 0 ? "even" : "odd"}`}
+                    >
+                        <div className="card-inner">
+                            <h3 className="card-title">{ev.eventName}</h3>
+                            <p className="card-desc">{ev.eventDescription}</p>
+                            <a href={ev.eventLink} className="card-cta">
+                                <Button text="Register / Details" />
+                            </a>
+                        </div>
+                    </div>
+                ))}
             </div>
 
             <a style={{ textDecoration: "none" }} href="/events">
                 <Button
-                    text={"VIEW DETAILS"}
+                    text={"VIEW ALL EVENTS"}
                     endIcon={
                         <svg
                             width="28"
@@ -40,7 +44,8 @@ const EventsSection = () => {
                     }
                 ></Button>
             </a>
-            <img src="./imgs/home/sunshine.png" alt=""></img>
+
+            <img src="./imgs/home/sunshine.png" alt="" />
         </section>
     );
 };

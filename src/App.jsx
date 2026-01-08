@@ -2,12 +2,14 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./screens/Home";
 import Events from "./screens/Events";
+import FloatingElements from "./components/FloatingElements/FloatingElements";
 import "./App.css";
 
 const App = () => {
     return (
 		<Router>
 			<div className="App">
+				<FloatingElements />
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/events" element={<Events />} />

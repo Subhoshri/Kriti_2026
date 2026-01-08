@@ -1,9 +1,10 @@
 /* src/components/Header.css */
 header {
-  background-color: #2BBAA5;
-  color: #fff;
-  padding: 1rem;
+  background-color: transparent;
+  color: var(--ink);
+  padding: 1.5rem 2rem;
   text-align: center;
+  z-index: 10;
 }
 
 header nav ul {
@@ -11,19 +12,86 @@ header nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 header nav ul li {
-  margin: 0 20px;
+  margin: 0;
 }
 
+/* Masking tape-style nav links */
 header nav a {
-  color: #fff;
+  display: inline-block;
+  padding: 0.65rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: var(--ink);
   text-decoration: none;
-  transition: color 0.3s;
+  font-weight: 600;
+  font-size: 1.1rem;
+  
+  /* Uneven borders for tape effect */
+  border-radius: 2px 8px 3px 6px;
+  
+  /* Slight tilt for organic feel */
+  transform: rotate(-1.2deg);
+  
+  /* Subtle drop shadow */
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.15);
+  
+  /* Smooth transitions for hover effects */
+  transition: transform 150ms ease, box-shadow 150ms ease, background-color 150ms ease;
+  
+  position: relative;
 }
 
+/* Hover: wiggle effect + color change */
 header nav a:hover {
-  color: #F9A822;
+  background-color: rgba(230, 57, 70, 0.85); /* Pop red with opacity */
+  color: var(--newsprint);
+  transform: rotate(-1.2deg) translateY(-2px);
+  box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.25);
+  animation: wiggle 400ms ease-in-out;
+}
+
+/* Wiggle animation for playful tape effect */
+@keyframes wiggle {
+  0% { transform: rotate(-1.2deg) translateY(-2px); }
+  25% { transform: rotate(-0.5deg) translateY(-3px); }
+  50% { transform: rotate(-2deg) translateY(-2px); }
+  75% { transform: rotate(-0.8deg) translateY(-2px); }
+  100% { transform: rotate(-1.2deg) translateY(-2px); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem 1.5rem;
+  }
+  
+  header nav ul {
+    gap: 1rem;
+  }
+  
+  header nav a {
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 0.75rem 1rem;
+  }
+  
+  header nav ul {
+    gap: 0.5rem;
+  }
+  
+  header nav a {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 1px 5px 2px 4px;
+  }
 }

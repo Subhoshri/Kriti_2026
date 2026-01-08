@@ -23,7 +23,13 @@ const HeroSection = () => {
   return (
     <section className="hero">
       <div className="content">
-        <div className="title ruslan">KRITI</div>
+        <div className="title ruslan">
+          <span className="letter letter-k">K</span>
+          <span className="letter letter-r">R</span>
+          <span className="letter letter-i1">I</span>
+          <span className="letter letter-t">T</span>
+          <span className="letter letter-i2">I</span>
+        </div>
         <div className="tagline">
           <p className="highlight">Largest</p>&nbsp;Art Festival of Kolkata
         </div>
