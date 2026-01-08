@@ -9,7 +9,9 @@ import eventsData from "../eventsData.json";
 
 const Events = () => {
     return (
-        <div>
+        <div className="EventsScreen">
+            <a href="/" className="tape-back" aria-label="Go back">Back</a>
+
             {/* <Header /> */}
             <EventsHeroSection />
 

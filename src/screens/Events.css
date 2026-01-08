@@ -9,3 +9,45 @@ h1,
 h2 {
     margin: 0;
 }
+
+/* Red tape 'Back' button */
+.tape-back {
+    position: sticky;
+    top: 1rem;
+    display: inline-block;
+    margin: 0.8rem;
+    background: var(--pop-red, #c21b1b);
+    color: #fff;
+    padding: 0.6rem 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    z-index: 40;
+    box-shadow: 0 10px 0 rgba(0,0,0,0.12);
+    -webkit-clip-path: polygon(0 0, 92% 0, 100% 12%, 88% 28%, 96% 42%, 84% 56%, 100% 72%, 88% 100%, 0 100%);
+    clip-path: polygon(0 0, 92% 0, 100% 12%, 88% 28%, 96% 42%, 84% 56%, 100% 72%, 88% 100%, 0 100%);
+    transform: rotate(-3deg);
+    transition: transform 160ms ease, box-shadow 160ms ease;
+    user-select: none;
+}
+
+.tape-back:hover {
+    animation: tape-shake 360ms ease-in-out;
+    box-shadow: 0 14px 6px rgba(0,0,0,0.14);
+}
+
+.tape-back:active {
+    transform: translateY(1px) rotate(-2deg) scale(0.995);
+}
+
+@keyframes tape-shake {
+    0% { transform: rotate(-3deg) translateX(0); }
+    20% { transform: rotate(-2deg) translateX(-3px); }
+    50% { transform: rotate(-4deg) translateX(3px); }
+    80% { transform: rotate(-3deg) translateX(-2px); }
+    100% { transform: rotate(-3deg) translateX(0); }
+}
+
+/* Ensure the sticky button stays visually on top when sections scroll */
+.EventsScreen { position: relative; }
+
+

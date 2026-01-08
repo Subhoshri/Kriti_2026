@@ -24,7 +24,7 @@ const ComingSoonSection = () => {
 					</svg>
 				}
 			></Button>
-        <img src="./imgs/home/mail.png" alt="" />
+        <img src="./imgs/bg1.jpg" alt="" />
         </section>
     );
 };

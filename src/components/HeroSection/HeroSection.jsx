@@ -15,7 +15,7 @@ const HeroSection = () => {
 
   function daysLeftBefore30Jan() {
     const now = new Date();
-    const eventDate = new Date("2025-01-30");
+    const eventDate = new Date("2026-01-30");
     const timeDiff = eventDate.getTime() - now.getTime();
     const daysLeft = Math.ceil(timeDiff / (1000 * 3600 * 24));
     return daysLeft;
@@ -59,7 +59,7 @@ const HeroSection = () => {
         <div className="item">Organised By: SCAGE</div>
       </div>
       <div className="rainbow">
-        <img src="./imgs/home/rainbow.png" alt="" />
+        <img src="./imgs/download (1).jpeg" alt="" />
         <div className="text-container">
           {daysLeft <= 0 ? (
             <div className="text">Live Now</div>
