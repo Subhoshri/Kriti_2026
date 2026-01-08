@@ -11,6 +11,7 @@ import TeamSection from "../components/TeamSection/TeamSection";
 import BottomSection from "../components/BottomSection/BottomSection";
 import Footer from "../components/Footer/Footer";
 import "./Home.css";
+import ArtistSection from "../components/ArtistSection/ArtistSection";
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
             <HeroSection />
             <BannerSection />
             <EventsSection />
+            <ArtistSection />
             <OrganiserSection />
             <SponsorSection />
             <ComingSoonSection />

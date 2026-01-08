@@ -4,18 +4,18 @@ import Button from "../Button/Button";
 import "./HeroSection.css";
 
 const HeroSection = () => {
-  const [daysLeft, setDaysLeft] = useState(daysLeftBefore17Jan());
+  const [daysLeft, setDaysLeft] = useState(daysLeftBefore30Jan());
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setDaysLeft(daysLeftBefore17Jan());
+      setDaysLeft(daysLeftBefore30Jan());
     }, 900000);
     return () => clearInterval(interval);
   }, []);
 
-  function daysLeftBefore17Jan() {
+  function daysLeftBefore30Jan() {
     const now = new Date();
-    const eventDate = new Date("2025-01-17");
+    const eventDate = new Date("2025-01-30");
     const timeDiff = eventDate.getTime() - now.getTime();
     const daysLeft = Math.ceil(timeDiff / (1000 * 3600 * 24));
     return daysLeft;
@@ -54,7 +54,7 @@ const HeroSection = () => {
         </a>
       </div>
       <div className="details">
-        <div className="item highlight">17th to 19th Jan, 2025</div>
+        <div className="item highlight">30th Jan, 31st Jan and 1st Feb, 2026</div>
         <div className="item">Venue: IIEST Shibpur</div>
         <div className="item">Organised By: SCAGE</div>
       </div>
@@ -65,7 +65,7 @@ const HeroSection = () => {
             <div className="text">Live Now</div>
           ) : (
             <>
-              <div className="days">{daysLeftBefore17Jan()}</div>
+              <div className="days">{daysLeftBefore30Jan()}</div>
               <div className="text">Days to go</div>
             </>
           )}
