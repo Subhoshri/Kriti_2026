@@ -4,11 +4,12 @@ import "./BannerSection.css";
 const BannerSection = () => {
 	const tickerItems = [
 		"● VIVID ●",
-		"VIBRANT",
+		"SCAGE PRESENTS",
 		"● VISIONARY ●",
-		"KRITI 2025",
+		"KRITI 2026",
 		"● BOUNDLESS CREATIVITY ●",
 		"ARTISTIC EXPRESSION",
+		"● ART IS LOUDER THAN WORDS ●",
 	];
 
 	const repeatedItems = Array(12).fill(tickerItems).flat();

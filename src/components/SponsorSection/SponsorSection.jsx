@@ -38,7 +38,7 @@ const SponsorSection = () => {
     return (
         <section className="section4">
             <div className="section4__main">
-                <div className="heading">PAST SPONSORS</div>
+                <div className="heading" style={{color: "#e6eab6"}}>PAST SPONSORS</div>
                 <div className="sponsors__container">
                     {sponsors.map((sponsor, index) => {
                         return (

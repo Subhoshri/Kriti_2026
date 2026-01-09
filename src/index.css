@@ -3,11 +3,24 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-/* Update your :root in index.css */
+
+.App::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 9999;
+}
+
 :root {
     /* Messy Mod — high-contrast 'Art Fest' palette */
     --newsprint: #F1FAEE; /* Newsprint White */
-    --ink: #1D3557;       /* Ink Black */
+    --ink: #10223b;       /* Ink Black */
     --pop-red: #E63946;   /* Pop Red accent */
     --pop-yellow: #FFB703;/* Pop Yellow accent */
 

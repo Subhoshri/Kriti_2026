@@ -13,7 +13,7 @@ const artists = [
 const ArtistSection = () => {
   return (
     <section className="artist-section">
-      <h2 className="section-title ruslan">Featured Artists</h2>
+      <h2 className="section-title ruslan" style={{color: "#e6eab6"}}>Featured Artists</h2>
 
       <div className="masonry">
         {artists.map((a, i) => (

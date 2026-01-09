@@ -5,7 +5,7 @@ import Button from "../Button/Button";
 const ComingSoonSection = () => {
     return (
         <section className="comingSoon-section">
-            <h1>MORE INFORMATION COMING SOON</h1>
+            <h1 style={{color: "#e6eab6"}}>MORE INFORMATION COMING SOON</h1>
             <input type="email" placeholder="ENTER YOUR EMAIL ..." />
             <Button
 				text={"SUBSCRIBE TO GET LATEST NEWS"}

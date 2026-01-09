@@ -112,7 +112,7 @@
 .hero .rainbow .days {
   font-size: 9rem;
   line-height: 6rem;
-  color: var(--color3);
+  color: #f1f4cd;
   text-shadow: 1px 1px 4px black;
   margin: 0;
   padding: 0;
@@ -121,7 +121,7 @@
 .hero .rainbow .text {
   font-size: 3.8rem;
   text-transform: uppercase;
-  color: var(--color2);
+  color: #f1f4cd;
   text-shadow: 1px 1px 4px black;
   white-space: nowrap; /* Prevent text wrapping */
 }
