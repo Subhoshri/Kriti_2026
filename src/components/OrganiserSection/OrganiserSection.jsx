@@ -46,7 +46,7 @@ const OrganiserSection = () => {
     return (
         <section className="section3">
             <div className="section3__main">
-                <div className="heading centered" style={{color: "#e6eab6"}}>MEET THE ORGANISERS</div>
+                <div className="heading centered" style={{color: "#e6eab6", textShadow: "1px 1px 4px black"}}>MEET THE ORGANISERS</div>
                 <div className="organisers__container">
                     {organisersData.map((organiser, index) => (
                         <div className="organisers" key={index}>

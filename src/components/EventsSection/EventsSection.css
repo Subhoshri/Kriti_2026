@@ -16,16 +16,17 @@
 }
 
 .events {
-    display: flex;
+    display: flex; /* Ensure it stays flex for horizontal scroll */
     overflow-x: auto;
     scroll-behavior: smooth;
     gap: 2.5rem;
-    padding: 3rem 5vw; /* Padding on sides so cards don't touch screen edges */
-    scroll-snap-type: x mandatory; /* Makes cards 'snap' into place */
+    padding: 3rem 5vw;
+    scroll-snap-type: x mandatory;
+    position: relative;
+    z-index: 5; /* Sit between the background (1) and the Title (10) */
     
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .events::-webkit-scrollbar {
@@ -78,24 +79,6 @@
 .card-cta {
     display: block;
     margin-top: auto;
-}
-
-/* Zine-style asymmetric grid */
-.event-section .events {
-    display: flex; /* Changed from grid to flex */
-    overflow-x: auto; /* Enables horizontal scrolling */
-    scroll-behavior: smooth;
-    gap: 2.5rem;
-    padding: 3rem 5vw;
-    scroll-snap-type: x mandatory; /* Cards snap into place */
-    
-    /* Technical polish */
-    -ms-overflow-style: none; 
-    scrollbar-width: none; 
-    align-items: stretch; /* Ensures cards are equal height */
-    margin: 1rem 0;
-    z-index: 2;
-    position: relative;
 }
 
 /* Hide the scrollbar entirely */
