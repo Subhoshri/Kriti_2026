@@ -26,6 +26,26 @@
   gap: 0.2rem;
 }
 
+.hero .title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;         /* This is the most important line */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+    overflow: visible;         /* Ensures shadows/tilts aren't cut off */
+}
+
+.letter {
+    display: inline-block;
+    /* Use 'vw' so the boxes get smaller as the phone gets smaller */
+    font-size: 18vw; 
+    padding: 0.5rem;
+    margin: 0 2px;
+    line-height: 1;
+}
+
 /* Ransom note / collage styling for each letter */
 .hero .content .title .letter {
   display: inline-block;
@@ -213,5 +233,16 @@
 
     .text-container {
         padding-top: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero .title {
+        gap: 2px; /* Tighten gaps on mobile */
+    }
+    
+    .letter {
+        font-size: 16vw; /* Carefully tuned to fit 5 letters on any phone */
+        padding: 4px;   /* Thinner boxes for mobile */
     }
 }
