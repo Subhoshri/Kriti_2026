@@ -1,43 +1,122 @@
 .event-section {
+    padding: 4rem 0;
     width: 100%;
-    max-height: fit-content;
-    padding: 0rem 2.5rem 10rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-    position: relative;
-    margin-top: 2rem;
+    position: relative; /* Add this to create a stacking context */
+    overflow: hidden; 
 }
 
 .event-section h1 {
     font-size: 5rem;
     font-weight: 400;
+    position: relative; /* Add this */
+    z-index: 10;        /* Increase this to be higher than the background img */
+    color: #e6eab6;     /* Ensure color isn't blending into the background */
+    margin-bottom: 20px;
+    padding-left: 5vw;
+}
+
+.events {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 2.5rem;
+    padding: 3rem 5vw; /* Padding on sides so cards don't touch screen edges */
+    scroll-snap-type: x mandatory; /* Makes cards 'snap' into place */
+    
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.events::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.event-card {
+    flex: 0 0 320px; /* Do not grow, do not shrink, fixed width */
+    max-width: 80vw; /* Responsive for mobile */
+    scroll-snap-align: center; /* Snaps card to the center of the view */
+    background: #ffffff;
+    border: 3px solid #000;
+    box-shadow: 10px 10px 0px #000;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+/* Messy Mod Tilts */
+.event-card.even {
+    transform: rotate(1.5deg);
+}
+
+.event-card.odd {
+    transform: rotate(-1.5deg);
+}
+
+.event-card:hover {
+    transform: rotate(0deg) scale(1.05);
     z-index: 2;
+}
+
+.card-title {
+    font-family: "Ruslan Display", sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #1d3557;
+}
+
+.card-desc {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    height: 120px; /* Ensures all cards stay the same height */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.card-cta {
+    display: block;
+    margin-top: auto;
 }
 
 /* Zine-style asymmetric grid */
 .event-section .events {
-    font-size: 1rem;
-    font-weight: 600;
-    z-index: 2;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 1rem 1.25rem;
-    align-items: start;
+    display: flex; /* Changed from grid to flex */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scroll-behavior: smooth;
+    gap: 2.5rem;
+    padding: 3rem 5vw;
+    scroll-snap-type: x mandatory; /* Cards snap into place */
+    
+    /* Technical polish */
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    align-items: stretch; /* Ensures cards are equal height */
     margin: 1rem 0;
+    z-index: 2;
+    position: relative;
+}
+
+/* Hide the scrollbar entirely */
+.event-section .events::-webkit-scrollbar {
+    display: none;
 }
 
 /* Individual event card — messy, tactile, print-y */
 .event-section .events .event-card {
+    flex: 0 0 320px; /* Crucial: 0 grow, 0 shrink, 320px width */
+    max-width: 85vw; /* Prevents card from being wider than screen on mobile */
+    scroll-snap-align: center; /* Snaps to center of screen */
+    
+    /* Keep your existing "Zine" styling below */
     background: var(--newsprint);
     border: 2px solid var(--ink);
-    padding: 1.1rem;
-    min-height: 160px;
-    box-shadow: 10px 10px 0px #000; /* Hard Shadow UI */
-    transform-origin: center;
+    padding: 1.5rem;
+    box-shadow: 10px 10px 0px #000;
     transition: transform 180ms ease, box-shadow 180ms ease;
-    position: relative;
-    overflow: hidden;
+    display: flex; /* Helps internal alignment */
+    flex-direction: column;
 }
 
 .event-section .events .event-card .card-inner {
@@ -81,24 +160,6 @@
     z-index: 5;
 }
 
-/* Intentional messy margins using nth-child patterns */
-.event-section .events .event-card:nth-child(4n+1) {
-    margin-top: 1.2rem;
-    margin-left: 0.6rem;
-}
-.event-section .events .event-card:nth-child(4n+2) {
-    margin-top: 0.6rem;
-    margin-left: -0.4rem;
-}
-.event-section .events .event-card:nth-child(4n+3) {
-    margin-top: 0.9rem;
-    margin-left: 0.3rem;
-}
-.event-section .events .event-card:nth-child(4n) {
-    margin-top: 0.3rem;
-    margin-left: -0.6rem;
-}
-
 .event-section img {
     position: absolute;
     height: 100%;
@@ -121,24 +182,20 @@
 }
 
 @media (max-width: 768px) {
-    .event-section { padding: 1.875rem; }
-    .event-section h1 { font-size: 3rem; }
-    .event-section .events { gap: 0.75rem; }
-
-    .event-section .events .event-card { box-shadow: 8px 8px 0px #000; }
-
-    .event-section button { padding: 0.5rem 1rem; height: 2.5rem; }
-    .event-section button span { font-size: 1.25rem; }
-    .event-section button svg { width: 1.75rem; height: 1.75rem; }
+    .event-section .events {
+        gap: 1.5rem;
+        padding: 2rem 10vw; /* Peek at next/prev cards */
+    }
+    
+    .event-section .events .event-card {
+        flex: 0 0 280px; /* Slightly smaller cards on mobile */
+    }
 }
 
 @media (max-width: 480px) {
-    .event-section { padding: 5rem 1rem; }
-    .event-section h1 { font-size: 2.5rem; }
-    .event-section .events { grid-template-columns: 1fr; }
-    .event-section .events .event-card { margin-left: 0 !important; transform: rotate(0deg) !important; }
-
-    .event-section button { padding: 0.375rem 0.75rem; height: 2.25rem; }
-    .event-section button span { font-size: 1rem; }
-    .event-section button svg { width: 1.5rem; height: 1.5rem; }
+    /* REMOVE the grid-template-columns: 1fr; rule you had here */
+    /* REMOVE the rotation reset; keep the tilts for the messy vibe! */
+    .event-section .events .event-card {
+        flex: 0 0 260px;
+    }
 }

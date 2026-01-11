@@ -6,7 +6,7 @@ import eventsData from "../../eventsData.json";
 const EventsSection = () => {
     return (
         <section className="event-section">
-            <h1 className="ruslan" style={{color: "#e6eab6", paddingTop: "40px"}}>OUR EVENTS</h1>
+            <h1 className="ruslan" style={{color: "#e6eab6", paddingTop: "40px", zIndex: 2}}>OUR EVENTS</h1>
 
             <div className="events">
                 {eventsData.events.map((ev, idx) => (
