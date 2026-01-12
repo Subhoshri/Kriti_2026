@@ -37,7 +37,7 @@ const Footer = () => {
         <div className="footer-card location-card">
           <h2 className="ruslan section-tag">LOCATION</h2>
           <p className="mono address-text">
-            IIEST SHIHPUR, HOWRAH,<br />
+            IIEST SHIBPUR, HOWRAH,<br />
             WEST BENGAL - 711103
           </p>
           
@@ -46,6 +46,7 @@ const Footer = () => {
             <div className="mono bank-info">
               <p>ACC: 1532010075776</p>
               <p>IFSC: PUNB0153220 (PUNJAB NATIONAL BANK)</p>
+			  <p>BRANCH: BESU</p>
             </div>
           </div>
         </div>
