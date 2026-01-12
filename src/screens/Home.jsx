@@ -23,10 +23,10 @@ const Home = () => {
             <ArtistSection />
             <OrganiserSection />
             <SponsorSection />
-            <ComingSoonSection />
+            {/*<ComingSoonSection />*/}
             {/* <TeamSection /> */}
             <BottomSection />
-            {/* <Footer /> */}
+            <Footer /> 
         </div>
     );
 };

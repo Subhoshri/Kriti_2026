@@ -1,14 +1,14 @@
 {
     "events": [
         {
-            "eventName": "Eco Design",
+            "eventName": "Eco Vision",
             "eventDescription": "Step up and share your vision for a sustainable future at the PPT Competition on Sustainable Development! This event invites participants to create compelling presentations that explore innovative solutions, strategies, and ideas for a greener, more sustainable world. Whether it’s tackling climate change, promoting renewable energy, or advancing eco-friendly practices, this competition challenges you to think critically and creatively about the global sustainability movement. Use your research, insights, and passion to inspire others and make a difference. Join us in presenting your ideas and be part of the conversation for a more sustainable tomorrow!",
             "eventImage": "./imgs/Events/EcoDesign.png",
             "isReversed": false,
             "eventLink": "https://forms.gle/PfsGZkANmgdY9dzS9"
         },
         {
-            "eventName": "Mud and Masterpieces",
+            "eventName": "Mud and Masterpiece",
             "eventDescription": "This is a hands-on session that invites you to shape your ideas into tangible works of art. Mold and sculpt clay into your desired form, then bring it to life with vibrant colors through painting. Whether you’re crafting a sculpture or a decorative piece, this workshop encourages self-expression and creative exploration. No prior experience needed—just bring your imagination and let the clay become your canvas. Join us for a fun, interactive experience where you’ll create unique, personalized artworks to take home!",
             "eventImage": "./imgs/Events/Mud.png",
             "isReversed": true,
@@ -22,8 +22,8 @@
             "eventLink": "https://forms.gle/pt5he9AqTb3KihJc9"
         },
         {
-            "eventName": "Fingers in Focus",
-            "eventDescription": "Get ready to turn your face or hands into a living canvas! This activity invites participants to explore the art of body painting, where you can choose to have your face or hands painted with intricate designs, vibrant colors, or whimsical patterns. Whether you want to go for bold, artistic, or something playful, our talented artists will help bring your vision to life. It’s a unique way to express yourself and add a colorful touch to your day. Come join the fun and let your imagination shine!",
+            "eventName": "Enigma Escape",
+            "eventDescription": "Get ready to work together to solve the mysteries and unlock hidden secrets before time runs out. In this thrilling escape room challenge, teams will navigate through a series of puzzles, riddles, and clues that test their problem-solving skills, creativity, and teamwork. Each room is designed with a unique theme and storyline, immersing participants in an exciting adventure. Whether you’re deciphering codes, finding hidden objects, or unraveling complex scenarios, the Enigma Escape promises an exhilarating experience that will keep you on the edge of your seat. Gather your friends, put your heads together, and see if you can escape in time!",
             "eventImage": "./imgs/Events/FingersInFocus.png",
             "isReversed": true,
             "eventLink": "https://forms.gle/TL3BPGjLLR4XbX2LA"
@@ -71,8 +71,8 @@
             "eventLink": "#"
         },
         {
-            "eventName": "ArtCade",
-            "eventDescription": "Get ready for a whirlwind of creativity and excitement at Artcade! This fun-filled event brings together a variety of interactive games designed to spark your imagination and test your skills. Participants can engage in playful challenges that blend art with friendly competition, offering the perfect opportunity to unwind and showcase creativity. With a mix of light-hearted challenges and creative twists, Artcade promises fun for everyone. Join in for a memorable experience full of surprises, laughter, and creative fun!",
+            "eventName": "Art Arcade",
+            "eventDescription": "Get ready for a whirlwind of creativity and excitement at Art Arcade! This fun-filled event brings together a variety of interactive games designed to spark your imagination and test your skills. Participants can engage in playful challenges that blend art with friendly competition, offering the perfect opportunity to unwind and showcase creativity. With a mix of light-hearted challenges and creative twists, Artcade promises fun for everyone. Join in for a memorable experience full of surprises, laughter, and creative fun!",
             "eventImage": "./imgs/Events/Artcade.png",
             "isReversed": false,
             "eventLink": "#"
@@ -82,6 +82,27 @@
             "eventDescription": "This interactive art exchange fosters a spirit of creativity, connection, and mutual inspiration. It’s more than just swapping drawings—it’s a celebration of individual expression and a way to appreciate diverse perspectives. By sharing your art, you contribute a piece of your imagination to the collective canvas, and by choosing someone else’s work, you carry home a fragment of their creativity. Each card on the wall tells a unique story, reflecting the emotions, ideas, and styles of the participants. Whether you’re an experienced artist or simply someone who loves to doodle, this booth is a reminder that art is a universal language that brings people together. So, let your creativity flow, leave your mark, and be inspired by the vibrant community around you!",
             "eventImage": "./imgs/Events/DoodleShop.png",
             "isReversed": true,
+            "eventLink": "#"
+        },
+        {
+            "eventName": "Caricature Cafe",
+            "eventDescription": "Step into the Caricature Cafe, where art meets humor in a lively and interactive setting! Here, talented artists will be on hand to create personalized caricatures for attendees, capturing their unique features with a playful twist. Whether you want a fun keepsake or a lighthearted gift, the Caricature Cafe offers a delightful experience that combines creativity and entertainment. Watch as your likeness is transformed into a whimsical work of art, and enjoy the lively atmosphere of this one-of-a-kind event. It’s the perfect opportunity to celebrate individuality and share some laughs along the way!",
+            "eventImage": "./imgs/Events/CaricatureCafe.png",
+            "isReversed": false,
+            "eventLink": "#"
+        },
+        {
+            "eventName": "BEing Artistic",
+            "eventDescription": "Experience creativity like never before at KRITI 6.0 with our Tote Bag Painting Workshop, guided by a talented guest artist. Participants will learn basic painting techniques and design tips while exploring their own artistic style in a fun and relaxed environment. At the end of the workshop, participants can take home their handpainted tote bag, making it a perfect blend of art, learning, and a memorable keepsake.",
+             "eventImage": "./imgs/Events/BeingArtistic.png",
+            "isReversed": true,
+            "eventLink": "#"
+        },
+        {
+            "eventName": "Campus in Colors",
+            "eventDescription": "Experience the charm of IIEST through art at our watercolor workshop in KRITI 6.0. In this guided session, participants will learn watercolor techniques and create paintings inspired by campus buildings, heritage sites, and iconic locations. Whether you’re a beginner or an experienced artist, this workshop offers a unique opportunity to capture the essence of IIEST in vibrant colors. Join us for a creative journey that celebrates the beauty of our campus and the art of watercolor painting!",
+            "eventImage": "./imgs/Events/CampusInColors.png",
+            "isReversed": false,
             "eventLink": "#"
         }
     ]
