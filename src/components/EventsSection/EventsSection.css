@@ -15,28 +15,13 @@
     padding-left: 5vw;
 }
 
-.events {
-    display: flex; /* Ensure it stays flex for horizontal scroll */
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    gap: 2.5rem;
-    padding: 3rem 5vw;
-    scroll-snap-type: x mandatory;
-    position: relative;
-    z-index: 5; /* Sit between the background (1) and the Title (10) */
-    
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
 .events::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+    display: none;
 }
 
 .event-card {
     flex: 0 0 320px; /* Do not grow, do not shrink, fixed width */
     max-width: 80vw; /* Responsive for mobile */
-    scroll-snap-align: center; /* Snaps card to the center of the view */
     background: #ffffff;
     border: 3px solid #000;
     box-shadow: 10px 10px 0px #000;
@@ -148,18 +133,15 @@
     height: 100%;
     width: 100%;
     z-index: 0;
-    opacity: 1;
+    opacity: 0.3; /* Lower opacity so it doesn't drown out your cards */
     bottom: 0px;
     left: 0;
     object-fit: cover;
-    object-position: top;
+    pointer-events: none; /* Allows you to scroll even if mouse is over the image */
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
-    .event-section .events {
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    }
 
     .event-section .events .event-card { min-height: 140px; }
 }

@@ -21,18 +21,27 @@
     text-shadow: 1px 1px 4px black;
 }
 
-/* Changed from Masonry to Flex-Scroll */
-.masonry {
+/* Update both .events and .masonry with these specific rules */
+.events, .masonry {
     display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    gap: 2rem;
-    padding: 2rem 5vw;
-    scroll-snap-type: x mandatory;
+    flex-wrap: nowrap;
+    overflow-x: hidden; /* Change from 'auto' to 'hidden' to stop manual scroll interference */
     
-    /* Hide scrollbar */
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    /* CRITICAL: Remove these lines if they exist: */
+    /* scroll-snap-type: x mandatory; */
+    /* scroll-behavior: smooth; */
+    
+    /* ADD THIS: Forces the browser to handle JS updates smoothly */
+    will-change: scroll-position; 
+    gap: 2.5rem;
+    padding: 3rem 5vw;
+}
+
+.event-card, .artist-card {
+    flex: 0 0 320px; /* Essential: Fixed width so math doesn't break */
+    
+    /* CRITICAL: Remove this line if it exists: */
+    /* scroll-snap-align: center; */
 }
 
 .masonry::-webkit-scrollbar {
@@ -40,16 +49,12 @@
 }
 
 .artist-card {
-    flex: 0 0 300px; /* Fixed width for horizontal scroll */
-    scroll-snap-align: center;
+    flex: 0 0 300px; /* Fixed width is essential for the math to work */
     background: var(--newsprint);
     border: 2px solid var(--ink);
-    position: relative;
-    overflow: hidden;
-    /* Rotation for Messy Mod feel */
-    transform: rotate(calc(var(--i, 0) * 1.5deg * (var(--i, 0) % 2 == 0 ? 1 : -1)));
     box-shadow: 8px 8px 0px #000;
-    transition: transform 250ms ease, box-shadow 250ms ease;
+    /* Keeps the tilt logic we added earlier */
+    transform: rotate(calc(var(--i, 0) * 1deg * (var(--i, 0) % 2 == 0 ? 1 : -1)));
 }
 
 .artist-card:hover {

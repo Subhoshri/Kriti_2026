@@ -1,0 +1,98 @@
+/* Fixed Trigger Button */
+.menu-trigger {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  transform: scale(0.9);
+  z-index: 10000; /* Highest priority */
+  background: #ffb703; /* Pop Yellow */
+  border: 3px solid #000;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: 4px 4px 0px #000;
+  transition: transform 0.2s ease;
+}
+
+.menu-trigger:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #000;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: #000;
+  transition: 0.3s;
+}
+
+/* Morphing the Hamburger to an 'X' when open */
+.menu-trigger.active .bar:nth-child(1) { transform: translateY(10px) rotate(45deg); }
+.menu-trigger.active .bar:nth-child(2) { opacity: 0; }
+.menu-trigger.active .bar:nth-child(3) { transform: translateY(-10px) rotate(-45deg); }
+
+/* The Fullscreen Overlay */
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(29, 53, 87, 0.7); /* Deep blue with transparency */
+  backdrop-filter: blur(15px); /* BLUR EFFECT */
+  -webkit-backdrop-filter: blur(15px);
+  z-index: 9999;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: flex-start;
+  padding-top: 20vh;
+  padding-left: 3vw; /* Gap from the left edge */
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.nav-overlay.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Nav Links Styling */
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  font-size: clamp(2rem, 10vw, 3.5rem);
+  color: #f1faee;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Messy Mod Hover Effect */
+.nav-links a:hover {
+  color: #e63946; /* Red */
+  transform: skewX(-10deg) scale(1.1);
+  text-shadow: 5px 5px 0px #ffb703; /* Yellow shadow */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .menu-trigger {
+    top: 20px;
+    left: 20px;
+    padding: 8px;
+  }
+  .nav-links a { font-size: 3rem; }
+
+  .nav-overlay {
+    padding-top: 15vh;
+    padding-left: 5vw;
+  }
+}

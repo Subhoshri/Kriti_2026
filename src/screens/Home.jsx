@@ -12,11 +12,13 @@ import BottomSection from "../components/BottomSection/BottomSection";
 import Footer from "../components/Footer/Footer";
 import "./Home.css";
 import ArtistSection from "../components/ArtistSection/ArtistSection";
+import Navbar from "../components/NavbarSection/Navbar";
 
 const Home = () => {
     return (
         <div>
             {/* <Header /> */}
+            <Navbar />
             <HeroSection />
             <BannerSection />
             <EventsSection />

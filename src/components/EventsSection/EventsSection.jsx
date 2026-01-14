@@ -2,14 +2,55 @@ import React from "react";
 import "./EventsSection.css";
 import Button from "../Button/Button";
 import eventsData from "../../eventsData.json";
+import { useEffect, useRef } from "react";
 
 const EventsSection = () => {
+    const scrollRef = useRef(null);
+    const displayEvents = [...eventsData.events, ...eventsData.events];
+    useEffect(() => {
+    const element = scrollRef.current;
+    if (!element) return;
+
+    let requestAnimationFrameId;
+    // Lower speed (e.g., 0.5) is smoother; higher speed (e.g., 2) can jitter
+    const speed = 2.5; 
+
+    const scroll = () => {
+        element.scrollLeft += speed;
+
+        // SEAMLESS RESET LOGIC
+        // We reset when we've reached the halfway point of the total scrollable width
+        if (element.scrollLeft >= element.scrollWidth / 2) {
+            // Subtracting the half instead of setting to 0 prevents the "skip"
+            element.scrollLeft -= element.scrollWidth / 2;
+        }
+        requestAnimationFrameId = requestAnimationFrame(scroll);
+    };
+
+    requestAnimationFrameId = requestAnimationFrame(scroll);
+
+    const stop = () => cancelAnimationFrame(requestAnimationFrameId);
+    const start = () => {
+        cancelAnimationFrame(requestAnimationFrameId);
+        requestAnimationFrameId = requestAnimationFrame(scroll);
+    };
+
+    element.addEventListener('mouseenter', stop);
+    element.addEventListener('mouseleave', start);
+
+    return () => {
+        cancelAnimationFrame(requestAnimationFrameId);
+        element.removeEventListener('mouseenter', stop);
+        element.removeEventListener('mouseleave', start);
+    };
+    }, []);
+
     return (
         <section className="event-section">
             <h1 className="ruslan" style={{color: "#e6eab6", paddingTop: "40px", zIndex: 2}}>OUR EVENTS</h1>
 
-            <div className="events">
-                {eventsData.events.map((ev, idx) => (
+            <div className="events" ref={scrollRef}> 
+                {displayEvents.map((ev, idx) => (
                     <div
                         key={ev.eventName + idx}
                         className={`event-card ${idx % 2 === 0 ? "even" : "odd"}`}

@@ -41,14 +41,6 @@ const Footer = () => {
             WEST BENGAL - 711103
           </p>
           
-          <div className="bank-sticker">
-            <h4 className="mono">BANKING DETAILS</h4>
-            <div className="mono bank-info">
-              <p>ACC: 1532010075776</p>
-              <p>IFSC: PUNB0153220 (PUNJAB NATIONAL BANK)</p>
-			  <p>BRANCH: BESU</p>
-            </div>
-          </div>
         </div>
       </div>
 
