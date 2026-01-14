@@ -22,6 +22,11 @@ const HeroSection = () => {
   }
   return (
     <section className="hero">
+      <div className="hero-header">
+        <img src="college-logo.png" alt="Left Logo" className="corner-logo" />
+
+        <img src="festival-logo.png" alt="Right Logo" className="corner-logo" />
+      </div>
       <div className="content">
         <div className="title ruslan" style={{ cursor: "pointer" }}>
           <span className="letter letter-k">K</span>
