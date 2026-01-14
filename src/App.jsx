@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./screens/Home";
 import Events from "./screens/Events";
+import Merchandise from "./screens/Merch";
 import "./App.css";
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/events" element={<Events />} />
+					<Route path="/merchandise" element={<Merchandise />} />
 				</Routes>
 				<div className="bg-img">
 					<img src="./imgs/fold-texture-bg.webp" alt="" />

@@ -55,7 +55,7 @@ const ArtistSection = () => {
   }, []);
 
   return (
-    <section className="artist-section">
+    <section className="artist-section" id="artists">
       <h2 className="section-title ruslan">Featured Artists</h2>
 
       <div className="masonry" ref={scrollRef}>

@@ -44,7 +44,7 @@ const organisersData = [
 
 const OrganiserSection = () => {
     return (
-        <section className="section3">
+        <section className="section3" id="organizers">
             <div className="section3__main">
                 <div className="heading centered" style={{color: "#e6eab6", textShadow: "1px 1px 4px black"}}>MEET THE ORGANISERS</div>
                 <div className="organisers__container">

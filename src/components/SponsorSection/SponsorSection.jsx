@@ -33,6 +33,10 @@ const SponsorSection = () => {
             sponsorImage: "/imgs/Sponsors/paris-bakery.jpeg",
             sponsorName: "PARIS BAKERY",
         },
+        {
+            sponsorImage: "/imgs/Sponsors/the-bakery-shop.png",
+            sponsorName: "THE BAKERY SHOP",
+        },
     ];
 
     return (
