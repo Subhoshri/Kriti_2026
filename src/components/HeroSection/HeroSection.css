@@ -183,7 +183,7 @@
 
 @media screen and (max-width: 900px) {
   .hero .content {
-    padding: 5rem 2rem 1.5rem 2rem;
+    padding: 12rem 2rem 1.5rem 2rem;
   }
 
   .hero .content .title {
@@ -198,7 +198,7 @@
 
   .hero .details {
     font-size: 1.2rem;
-    top: 1rem;
+    top: 7rem;
     right: 1rem;
   }
 
