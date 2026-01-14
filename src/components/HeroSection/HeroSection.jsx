@@ -23,7 +23,7 @@ const HeroSection = () => {
   return (
     <section className="hero">
       <div className="content">
-        <div className="title ruslan">
+        <div className="title ruslan" style={{ cursor: "pointer" }}>
           <span className="letter letter-k">K</span>
           <span className="letter letter-r">R</span>
           <span className="letter letter-i1">I</span>

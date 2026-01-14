@@ -1,51 +1,57 @@
-import React from "react";
-import "./Footer.css";
+import React from 'react';
+import './Footer.css';
+import { FaEnvelope, FaGlobe, FaInstagram, FaYoutube, FaPhoneAlt } from 'react-icons/fa';
 
 const Footer = () => {
-  const contacts = [
-    { name: "Mayukh Mondal", phone: "9749165361" },
-    { name: "Sujan Sharma", phone: "9462480435" },
-    { name: "Aditya Raj Verma", phone: "8210240857" },
-    { name: "Avishek Pal", phone: "9832061992" },
-  ];
-
   return (
-    <footer className="main-footer">
-      {/* Decorative "Tape" element to break the straight line */}
-      <div className="footer-tape">KRITI 2026 ● KRITI 2026 ● KRITI 2026</div>
-
-      <div className="footer-grid">
-        {/* Left Section: Contacts */}
-        <div className="footer-card contact-card">
-          <h2 className="ruslan section-tag">CONTACT US</h2>
-          <div className="contact-list mono">
-            {contacts.map((c, i) => (
-              <div key={i} className="contact-row">
-                <span className="name">{c.name}</span>
-                <span className="dots"></span>
-                <span className="phone">{c.phone}</span>
-              </div>
-            ))}
+    <footer className="footer-container">
+      <div className="footer-content">
+        
+        {/* Left Section: Branding & Address */}
+        <div className="footer-section branding">
+          <div className="logo-placeholder">
+            <img src="path-to-your-logo.png" alt="KRITI 2026" />
           </div>
-          <div className="social-box mono">
-            <p>scageiiestshibpur@gmail.com</p>
-            <p>kriti.scage.in | @scage_iiests</p>
+          <address>
+            IIEST SHIBPUR, PO: Botanic Garden, Botanical Garden Road,<br />
+            IIEST Shibpur, Howrah-711103, West Bengal
+          </address>
+          <p className="copyright">© kriti.in 2026. All rights reserved</p>
+        </div>
+
+        {/* Middle Section: Contacts */}
+        <div className="footer-section contacts">
+          <h3>Contacts</h3>
+          <div className="contact-grid">
+            <div className="contact-item">
+              <span className="name">Mayukh Mondal</span>
+              <span className="phone"><FaPhoneAlt size={12} />9749165361</span>
+            </div>
+            <div className="contact-item">
+              <span className="name">Sujan Sharma</span>
+              <span className="phone"><FaPhoneAlt size={12} />9462480435</span>
+            </div>
+            <div className="contact-item">
+              <span className="name">Aditya Raj Verma</span>
+              <span className="phone"><FaPhoneAlt size={12} />8210240857</span>
+            </div>
+            <div className="contact-item">
+              <span className="name">Avishek Pal</span>
+              <span className="phone"><FaPhoneAlt size={12} />9832061992</span>
+            </div>
           </div>
         </div>
 
-        {/* Right Section: Location & Bank */}
-        <div className="footer-card location-card">
-          <h2 className="ruslan section-tag">LOCATION</h2>
-          <p className="mono address-text">
-            IIEST SHIBPUR, HOWRAH,<br />
-            WEST BENGAL - 711103
-          </p>
-          
+        {/* Right Section: Social Media */}
+        <div className="footer-section socials">
+          <h3>Visit us Virtually</h3>
+          <div className="social-icons">
+            <a href="scageiiestshibpur@gmail.com" className="icon-circle"><FaEnvelope /></a>
+            <a href="https://www.instagram.com/scage_iiests/" className="icon-circle"><FaInstagram /></a>
+            <a href="https://kriti-2026.vercel.app/" className="icon-circle"><FaGlobe /></a>
+          </div>
         </div>
-      </div>
 
-      <div className="footer-bottom mono">
-        <p>© KRITI 2026. ORGANIZED BY SCAGE</p>
       </div>
     </footer>
   );
