@@ -23,7 +23,7 @@ const HeroSection = () => {
   return (
     <section className="hero">
       <div className="hero-header">
-        <img src="../public/imgs/kriti.png" alt="Left Logo" className="corner-logo left" />
+        <img src="/imgs/kriti.png" alt="Left Logo" className="corner-logo left" />
 
       </div>
       <div className="content">
