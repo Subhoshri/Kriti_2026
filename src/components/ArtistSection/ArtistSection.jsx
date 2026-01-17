@@ -6,7 +6,7 @@ const ArtistSection = () => {
   const scrollRef = useRef(null);
     // Duplicate the artists array
     const artists = [
-    { name: "Tarak Garai", medium: "Sculptor", image: "./imgs/home/artist1.jpg", ratio: "66%" },
+    { name: "Tarak Garai", medium: "Sculptor", image: "./imgs/Artist/tarak_garai.jpg", ratio: "66%" },
     { name: "Ravi Sen", medium: "Sculptor", image: "./imgs/home/artist2.jpg", ratio: "80%" },
     { name: "Maya Roy", medium: "Illustrator", image: "./imgs/home/artist3.jpg", ratio: "56%" },
     { name: "Dev Patel", medium: "Photographer", image: "./imgs/home/artist4.jpg", ratio: "72%" },

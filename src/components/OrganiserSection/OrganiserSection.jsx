@@ -16,18 +16,18 @@ const organisersData = [
 	{
 		name: "Aditya Raj Verma",
 		shortIntro: "Committee Secretary",
-		profileImg: "MayukhMondal.webp",
+		profileImg: "aditya.jpeg",
 	},
 	{
 		name: "Avishek Pal",
 		shortIntro: "Committee Treasurer",
-		profileImg: "SangeetDhabare.webp",
+		profileImg: "avishek.jpg",
 	},
 
 	{
 		name: "Sangeet Dhabare",
 		shortIntro: "Finance",
-		profileImg: "KrishnenduMondal.webp",
+		profileImg: "sangeet_gunwant_dhabare.png",
 	},
 {
 		name: "Aditi Karmakar",
