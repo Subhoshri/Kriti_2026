@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #faecb6; /* Background color for the entire page */
+}
+
 /* BACK BUTTON STYLING */
 .back-button {
   position: fixed;
@@ -30,7 +36,6 @@
 /* MERCH PAGE BACKGROUND */
 .merch-page {
   min-height: 100vh;
-  background-color: #f1faee; 
   padding: 8rem 5vw 4rem;
   position: relative;
   overflow-x: hidden;
@@ -66,7 +71,7 @@
 .merch-page {
   min-height: 100vh;
   /* Match Home Page Background */
-  background-color: var(--newsprint, #f1faee); 
+  background-color: var(--bg-5, #faecb6); 
   padding: 8rem 5vw 4rem;
   position: relative;
   overflow: hidden;

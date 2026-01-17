@@ -12,21 +12,6 @@ section {
     position: relative;
 }
 
-/* src/App.css updates */
-.App .bg-img {
-    mix-blend-mode: multiply; /* Makes texture images blend with background color */
-    filter: contrast(120%) brightness(90%);
-    pointer-events: none; /* Ensure background doesn't block clicks */
-}
-
-/* Give individual texture pieces slight rotations for that "pasted" look */
-.App .bg-img img:nth-child(odd) {
-    transform: rotate(2deg) scale(1.05);
-}
-.App .bg-img img:nth-child(even) {
-    transform: rotate(-1.5deg);
-}
-
 .App .bg-img {
     position: absolute;
     top: 0;
