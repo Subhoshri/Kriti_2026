@@ -4,14 +4,14 @@ import "./OrganiserSection.css";
 
 const organisersData = [
 	{
-		name: "Akash Das",
+		name: "Mayukh Mondal",
 		shortIntro: "Main Coordinator",
-		profileImg: "AkashDas.webp",
+		profileImg: "MayukhMondal.webp",
 	},
 	{
-		name: "Twameka Sinha",
+		name: "Faiza Tabasum",
 		shortIntro: "Main Coordinator",
-		profileImg: "TwamekaSinha.webp",
+		profileImg: "faiza.jpg",
 	},
 	{
 		name: "Aditya Raj Verma",
@@ -30,14 +30,14 @@ const organisersData = [
 		profileImg: "sangeet_gunwant_dhabare.png",
 	},
 {
-		name: "Aditi Karmakar",
+		name: "Dhruv Kumar",
 		shortIntro: "Joint Coordinator",
-		profileImg: "AditiKarmakar.webp",
+		profileImg: "dhruv.webp",
 	},
 	{
-		name: "Sourish Pal",
+		name: "Supriyo Barman",
 		shortIntro: "Joint Coordinator",
-		profileImg: "SourishPal.webp",
+		profileImg: "supriyo.webp",
 	},
 	
 ];
