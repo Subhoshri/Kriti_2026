@@ -4,7 +4,6 @@ import "./EventsDetailsSection.css";
 
 const EventsDetailsSection = ({
     isReversed,
-    eventImage,
     eventName,
     eventDescription,
     eventLink,
@@ -13,15 +12,7 @@ const EventsDetailsSection = ({
     return (
         <section className="EventsDetails-section">
             <div className={`eventDetails ${isReversed ? "reverse" : ""}`}>
-                <div className="image">
-                    <img
-                        className="event-image"
-                        src={eventImage}
-                        alt={eventName}
-                    />
-                    {/* <img className="top-ribbon-image" src={`${isReversed ? './imgs/Green-Ribbon.png' : './imgs/Red-Ribbon.png'} `} alt="" /> */}
-                    {/* <img className="bottom-ribbon-image" src={`${isReversed ? './imgs/Green-Ribbon.png' : './imgs/Red-Ribbon.png'} `} alt="" /> */}
-                </div>
+                
                 <div className="details">
                     <h1 className="ruslan">{eventName}</h1>
                     <p>{eventDescription}</p>

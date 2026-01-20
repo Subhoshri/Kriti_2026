@@ -33,7 +33,6 @@ const Events = () => {
                 <EventsDetailsSection
                     key={index}
                     isReversed={event.isReversed}
-                    eventImage={event.eventImage}
                     eventName={event.eventName}
                     eventDescription={event.eventDescription}
                     eventLink={event.eventLink}

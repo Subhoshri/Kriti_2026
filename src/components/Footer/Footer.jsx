@@ -10,7 +10,7 @@ const Footer = () => {
         {/* Left Section: Branding & Address */}
         <div className="footer-section branding">
           <div className="logo-placeholder">
-            <img src="../public/imgs/kriti.png" alt="KRITI 2026" />
+            <img src="/imgs/kriti.png" alt="KRITI 2026" />
           </div>
           <address>
             IIEST SHIBPUR, PO: Botanic Garden, Botanical Garden Road,<br />

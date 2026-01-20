@@ -22,9 +22,12 @@ const HeroSection = () => {
   }
   return (
     <section className="hero">
-      <div className="hero-header">
-        <img src="/imgs/kriti.png" alt="Left Logo" className="corner-logo left" />
-
+      <div className="hero-top-bar">
+        {/* The Menu trigger is fixed, so it will appear here automatically 
+            if you placed it in App.jsx. If not, the space is reserved. */}
+        <div className="menu-placeholder"></div> 
+        
+        <img src="/imgs/kriti.png" alt="Right Logo" className="header-logo" />
       </div>
       <div className="content">
         <div className="title ruslan" style={{ cursor: "pointer" }}>

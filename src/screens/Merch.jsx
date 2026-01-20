@@ -6,10 +6,10 @@ import Button from "../components/Button/Button"; // Reusing your existing butto
 const Merchandise = () => {
   const merchItem = {
     name: "OFFICIAL KRITI 6.0 T-SHIRT",
-    price: "₹349",
-    description: "Limited edition festival tee. Heavyweight cotton, oversized fit, and brutalist print.",
-    image: "./imgs/merch/tshirt-mockup.png", // Ensure this path is correct
-    formLink: "https://forms.gle/your-google-form-link"
+    price: "₹369",
+    description: "Whether you're an artist, a performer, or a fest enthusiast, this is your chance to carry the spirit of KRITI 6.0 with you. ",
+    image: "./imgs/merch1.jpeg", // Ensure this path is correct
+    formLink: "https://docs.google.com/forms/d/e/1FAIpQLSd8hexQGKrQqZEMzLcWeUFA5kyhPg2QPqeA4OmTj3B6xuOk3A/viewform"
   };
 
   return (

@@ -32,12 +32,12 @@ const organisersData = [
 {
 		name: "Dhruv Kumar",
 		shortIntro: "Joint Coordinator",
-		profileImg: "dhruv.webp",
+		profileImg: "dhruv1.jpeg",
 	},
 	{
 		name: "Supriyo Barman",
 		shortIntro: "Joint Coordinator",
-		profileImg: "supriyo.webp",
+		profileImg: "supriyo.jpeg",
 	},
 	
 ];
