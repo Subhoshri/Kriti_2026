@@ -10,7 +10,7 @@ const ArtistSection = () => {
     { name: "Mrityunjay Mondal", medium: "Sculptor", image: "/imgs/Artist/mrityunjay.jpeg", ratio: "80%" },
     { name: "Sananda Mullick", medium: "Illustrator", image: "/imgs/Artist/sananda.jpeg", ratio: "56%" },
     { name: "Nityananda Paul", medium: "Photographer", image: "/imgs/Artist/nityananda.jpeg", ratio: "72%" },
-    { name: "Shyamal Da", medium: "Mixed Media", image: "/imgs/Artist/shyamal.jpeg", ratio: "50%" },
+    { name: "Shyamal Bhattacharjee", medium: "Mixed Media", image: "/imgs/Artist/shyamal.jpeg", ratio: "50%" },
     { name: "Rajib Paul", medium: "Printmaker", image: "/imgs/Artist/rajib.jpeg", ratio: "88%" },
     ];
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import { FaEnvelope, FaGlobe, FaInstagram, FaYoutube, FaPhoneAlt } from 'react-icons/fa';
+import { FaEnvelope, FaGlobe, FaInstagram, FaYoutube, FaPhoneAlt, FaFacebook } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -28,8 +28,8 @@ const Footer = () => {
               <span className="phone"><FaPhoneAlt size={12} /> 9749165361</span>
             </div>
             <div className="contact-item">
-              <span className="name">Sujan Sharma</span>
-              <span className="phone"><FaPhoneAlt size={12} /> 9462480435</span>
+              <span className="name">Faiza Tabasum</span>
+              <span className="phone"><FaPhoneAlt size={12} /> 9390865921</span>
             </div>
             <div className="contact-item">
               <span className="name">Aditya Raj Verma</span>
@@ -48,7 +48,8 @@ const Footer = () => {
           <div className="social-icons">
             <a href="scageiiestshibpur@gmail.com" className="icon-circle"><FaEnvelope /></a>
             <a href="https://www.instagram.com/scage_iiests/" className="icon-circle"><FaInstagram /></a>
-            <a href="https://kriti-2026.vercel.app/" className="icon-circle"><FaGlobe /></a>
+            <a href="https://kriti.scage.in/" className="icon-circle"><FaGlobe /></a>
+            <a href="https://www.facebook.com/share/1Pm2M8X6nk" className="icon-circle"><FaFacebook /></a>
           </div>
         </div>
 

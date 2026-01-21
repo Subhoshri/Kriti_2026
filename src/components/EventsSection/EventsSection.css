@@ -29,20 +29,6 @@
     transition: transform 0.3s ease;
 }
 
-/* Messy Mod Tilts */
-.event-card.even {
-    transform: rotate(1.5deg);
-}
-
-.event-card.odd {
-    transform: rotate(-1.5deg);
-}
-
-.event-card:hover {
-    transform: rotate(0deg) scale(1.05);
-    z-index: 2;
-}
-
 .card-title {
     font-family: "Ruslan Display", sans-serif;
     font-size: 1.8rem;
@@ -113,13 +99,6 @@
     text-decoration: none;
 }
 
-/* Even / Odd rotation rules (indexing from 0 in JSX) */
-.event-section .events .event-card.even {
-    transform: rotate(2deg);
-}
-.event-section .events .event-card.odd {
-    transform: rotate(-1.5deg);
-}
 
 /* Hover: straighten and shrink shadow to mimic press */
 .event-section .events .event-card:hover {

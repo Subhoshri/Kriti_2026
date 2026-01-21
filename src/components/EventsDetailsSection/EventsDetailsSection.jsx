@@ -20,7 +20,7 @@ const EventsDetailsSection = ({
                         <Button
                             text={
                                 isLinkVoid
-                                    ? "NO REGISTRATION REQUIRED"
+                                    ? "REGISTRATION NOT REQUIRED"
                                     : "REGISTER"
                             }
                             endIcon={
