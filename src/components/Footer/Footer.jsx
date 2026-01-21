@@ -25,19 +25,19 @@ const Footer = () => {
           <div className="contact-grid">
             <div className="contact-item">
               <span className="name">Mayukh Mondal</span>
-              <span className="phone"><FaPhoneAlt size={12} />9749165361</span>
+              <span className="phone"><FaPhoneAlt size={12} /> 9749165361</span>
             </div>
             <div className="contact-item">
               <span className="name">Sujan Sharma</span>
-              <span className="phone"><FaPhoneAlt size={12} />9462480435</span>
+              <span className="phone"><FaPhoneAlt size={12} /> 9462480435</span>
             </div>
             <div className="contact-item">
               <span className="name">Aditya Raj Verma</span>
-              <span className="phone"><FaPhoneAlt size={12} />8210240857</span>
+              <span className="phone"><FaPhoneAlt size={12} /> 8210240857</span>
             </div>
             <div className="contact-item">
               <span className="name">Avishek Pal</span>
-              <span className="phone"><FaPhoneAlt size={12} />9832061992</span>
+              <span className="phone"><FaPhoneAlt size={12} /> 9832061992</span>
             </div>
           </div>
         </div>

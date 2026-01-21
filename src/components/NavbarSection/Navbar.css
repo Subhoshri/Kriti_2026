@@ -5,15 +5,17 @@
   left: 30px;
   transform: scale(0.9);
   z-index: 10000; /* Highest priority */
-  background: #ffb703; /* Pop Yellow */
-  border: 3px solid #000;
+  background: #090909; /* CHANGE THIS for the box color */
+  border: 3px solid #ffb703;
   padding: 10px;
   cursor: pointer;
   display: flex;
-  flex-direction: column;
-  gap: 6px;
-  box-shadow: 4px 4px 0px #000;
-  transition: transform 0.2s ease;
+    flex-direction: column;
+    justify-content: center; /* Centers bars vertically */
+    align-items: center;
+    gap: 5px; /* Precise gap for mobile */
+    width: 60px; /* Fixed container size */
+    height: 45px;
 }
 
 .menu-trigger:active {
@@ -22,10 +24,12 @@
 }
 
 .bar {
-  width: 30px;
-  height: 4px;
-  background-color: #000;
-  transition: 0.3s;
+    width: 28px; /* Slightly shorter than the container */
+    height: 3px;  /* Thinner lines look sharper on phones */
+    background-color: #000;
+    display: block;
+    transition: 0.3s ease;
+    border-radius: 2px; /* Smooths the edges */
 }
 
 /* Morphing the Hamburger to an 'X' when open */
@@ -82,17 +86,34 @@
   text-shadow: 5px 5px 0px #ffb703; /* Yellow shadow */
 }
 
-/* Responsive adjustments */
+/* ... keep your existing laptop styles ... */
+
 @media (max-width: 768px) {
   .menu-trigger {
-    top: 20px;
+    top: 10px; /* Adjusted for your new dark header height */
     left: 20px;
-    padding: 8px;
+    padding: 10px; /* Keep enough padding so bars aren't at the edge */
+    transform: scale(0.8); /* Slightly smaller for mobile headers */
+    gap: 5px; /* Ensure space between the three lines */
   }
-  .nav-links a { font-size: 3rem; }
+
+  .bar {
+    width: 25px; /* Slightly shorter bars for mobile */
+    height: 3px;  /* Slightly thinner bars to prevent the 'box' look */
+    background-color: #000;
+    display: block; /* Force them to be blocks */
+  }
+
+  /* Adjust the 'X' morph for the new mobile dimensions */
+  .menu-trigger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .menu-trigger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+  .nav-links a { 
+    font-size: 2.2rem; /* Matches your previous request for smaller text */
+  }
 
   .nav-overlay {
     padding-top: 15vh;
-    padding-left: 5vw;
+    padding-left: 8vw;
   }
 }

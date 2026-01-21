@@ -7,11 +7,11 @@ const ArtistSection = () => {
     // Duplicate the artists array
     const artists = [
     { name: "Tarak Garai", medium: "Sculptor", image: "/imgs/Artist/tarak_garai.jpg", ratio: "66%" },
-    //{ name: "Ravi Sen", medium: "Sculptor", image: "./imgs/home/artist2.jpg", ratio: "80%" },
-    //{ name: "Maya Roy", medium: "Illustrator", image: "./imgs/home/artist3.jpg", ratio: "56%" },
-    //{ name: "Dev Patel", medium: "Photographer", image: "./imgs/home/artist4.jpg", ratio: "72%" },
-    //{ name: "Nina Das", medium: "Mixed Media", image: "./imgs/home/artist5.jpg", ratio: "50%" },
-    //{ name: "Arun Khatri", medium: "Printmaker", image: "./imgs/home/artist6.jpg", ratio: "88%" },
+    { name: "Mrityunjay Mondal", medium: "Sculptor", image: "./imgs/Artist/mrityunjay.jpeg", ratio: "80%" },
+    { name: "Sananda Mullick", medium: "Illustrator", image: "./imgs/Artist/sananda.jpeg", ratio: "56%" },
+    { name: "Nityananda Paul", medium: "Photographer", image: "./imgs/Artist/nityananda.jpeg", ratio: "72%" },
+    { name: "Shyamal Da", medium: "Mixed Media", image: "./imgs/Artist/shyamal.jpeg", ratio: "50%" },
+    { name: "Rajib Paul", medium: "Printmaker", image: "./imgs/Artist/rajib.jpeg", ratio: "88%" },
     ];
 
     const displayArtists = [...artists, ...artists];
@@ -59,7 +59,7 @@ const ArtistSection = () => {
       <h2 className="section-title ruslan">Featured Artists</h2>
 
       <div className="masonry" ref={scrollRef}>
-        {artists.map((a, i) => (
+        {displayArtists.map((a, i) => (
           <article
             key={a.name + i}
             className="artist-card"
@@ -72,7 +72,7 @@ const ArtistSection = () => {
 
             <div className="meta">
               <div className="artist-name ruslan">{a.name}</div>
-              <div className="artist-medium">{a.medium}</div>
+              {/*<div className="artist-medium">{a.medium}</div>*/}
             </div>
           </article>
         ))}
