@@ -7,11 +7,11 @@ const ArtistSection = () => {
     // Duplicate the artists array
     const artists = [
     { name: "Tarak Garai", medium: "Sculptor", image: "/imgs/Artist/tarak_garai.jpg", ratio: "66%" },
-    { name: "Mrityunjay Mondal", medium: "Sculptor", image: "./imgs/Artist/mrityunjay.jpeg", ratio: "80%" },
-    { name: "Sananda Mullick", medium: "Illustrator", image: "./imgs/Artist/sananda.jpeg", ratio: "56%" },
-    { name: "Nityananda Paul", medium: "Photographer", image: "./imgs/Artist/nityananda.jpeg", ratio: "72%" },
-    { name: "Shyamal Da", medium: "Mixed Media", image: "./imgs/Artist/shyamal.jpeg", ratio: "50%" },
-    { name: "Rajib Paul", medium: "Printmaker", image: "./imgs/Artist/rajib.jpeg", ratio: "88%" },
+    { name: "Mrityunjay Mondal", medium: "Sculptor", image: "/imgs/Artist/mrityunjay.jpeg", ratio: "80%" },
+    { name: "Sananda Mullick", medium: "Illustrator", image: "/imgs/Artist/sananda.jpeg", ratio: "56%" },
+    { name: "Nityananda Paul", medium: "Photographer", image: "/imgs/Artist/nityananda.jpeg", ratio: "72%" },
+    { name: "Shyamal Da", medium: "Mixed Media", image: "/imgs/Artist/shyamal.jpeg", ratio: "50%" },
+    { name: "Rajib Paul", medium: "Printmaker", image: "/imgs/Artist/rajib.jpeg", ratio: "88%" },
     ];
 
     const displayArtists = [...artists, ...artists];
