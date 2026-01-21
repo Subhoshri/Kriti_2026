@@ -26,7 +26,7 @@
             "eventDescription": "Get ready to work together to solve the mysteries and unlock hidden secrets before time runs out. In this thrilling escape room challenge, teams will navigate through a series of puzzles, riddles, and clues that test their problem-solving skills, creativity, and teamwork. Each room is designed with a unique theme and storyline, immersing participants in an exciting adventure. Whether you’re deciphering codes, finding hidden objects, or unraveling complex scenarios, the Enigma Escape promises an exhilarating experience that will keep you on the edge of your seat. Gather your friends, put your heads together, and see if you can escape in time!",
             "eventImage": "./imgs/Events/FingersInFocus.png",
             "isReversed": true,
-            "eventLink": "#"
+            "eventLink": "https://docs.google.com/forms/d/e/1FAIpQLSfjcFEmhA6l9RPWP_E_K--7MR4T9uXTA2MBokKLFsF3mioE4w/viewform?usp=dialog"
         },
         {
             "eventName": "Picture Perfect",
@@ -43,11 +43,11 @@
             "eventLink": "#"
         },
         {
-            "eventName": "Mindful Meadows",
-            "eventDescription": "Join us in the Mindful Meadows to explore the intersection of art and mental health. This session focuses on using sketching as a therapeutic medium to express emotions, relieve stress, and foster self-awareness. Guided by skilled artists and mental health advocates, participants will learn sketching techniques to translate thoughts and emotions onto paper and understand how creative expression contributes to mental well-being. Just bring an open mind and your willingness to create. Let’s draw out the conversation around mental health and well-being!",
-            "eventImage": "./imgs/Events/MindMeadows.png",
+            "eventName": "Campus in Colors",
+            "eventDescription": "Experience the charm of IIEST through art at our watercolor workshop in KRITI 6.0. In this guided session, participants will learn watercolor techniques and create paintings inspired by campus buildings, heritage sites, and iconic locations. Whether you’re a beginner or an experienced artist, this workshop offers a unique opportunity to capture the essence of IIEST in vibrant colors. Join us for a creative journey that celebrates the beauty of our campus and the art of watercolor painting!",
+            "eventImage": "./imgs/Events/CampusInColors.png",
             "isReversed": false,
-            "eventLink": "#"
+            "eventLink": "https://docs.google.com/forms/d/1G94kpElmcxINHqdxdX-R2dde_LFjGzW5wYyEbuCbleY/edit"
         },
         {
             "eventName": "Vouge-E-Bella",
@@ -97,13 +97,7 @@
              "eventImage": "./imgs/Events/BeingArtistic.png",
             "isReversed": true,
             "eventLink": "https://docs.google.com/forms/d/e/1FAIpQLSfKRsq9PylPtQh49-nB2kWEX_4MxIzQ9Yd2DXWxVVtQIC5ilw/viewform"
-        },
-        {
-            "eventName": "Campus in Colors",
-            "eventDescription": "Experience the charm of IIEST through art at our watercolor workshop in KRITI 6.0. In this guided session, participants will learn watercolor techniques and create paintings inspired by campus buildings, heritage sites, and iconic locations. Whether you’re a beginner or an experienced artist, this workshop offers a unique opportunity to capture the essence of IIEST in vibrant colors. Join us for a creative journey that celebrates the beauty of our campus and the art of watercolor painting!",
-            "eventImage": "./imgs/Events/CampusInColors.png",
-            "isReversed": false,
-            "eventLink": "https://docs.google.com/forms/d/1G94kpElmcxINHqdxdX-R2dde_LFjGzW5wYyEbuCbleY/edit"
         }
+        
     ]
 }
