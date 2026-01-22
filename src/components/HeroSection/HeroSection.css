@@ -317,7 +317,7 @@
 
     /* Optional: If the tagline is also too big, shrink it here */
     .hero .content .tagline {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         line-height: 1rem;
     }
 }
