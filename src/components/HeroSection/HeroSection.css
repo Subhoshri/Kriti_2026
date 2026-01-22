@@ -266,7 +266,7 @@
 
 @media (max-width: 768px) {
   .hero .content .title {
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 4rem;
     }  
   .hero {
@@ -316,7 +316,7 @@
 
     /* Optional: If the tagline is also too big, shrink it here */
     .hero .content .tagline {
-        font-size: 1rem;
+        font-size: 1.4rem;
         line-height: 1rem;
     }
 }
