@@ -308,7 +308,7 @@
 
     .letter {
         /* CHANGE: Reduce from 16vw to 12vw or 10vw */
-        font-size: 10vw !important; 
+        font-size: 12vw !important; 
         padding: 0.2rem 0.4rem !important; /* Thinner padding */
         margin: 0 1px !important;
         border-width: 1px !important; /* Thinner borders for mobile */
