@@ -47,7 +47,8 @@
             "eventDescription": "Welcome to the Scrapyard, where creativity meets sustainability! In this exciting activity, participants will transform discarded materials into unique, imaginative works of art. Using everyday items like bottle caps, old magazines, fabric scraps, and more, you’ll craft something beautiful, functional, or entirely abstract. The Scrapeyard challenges you to think outside the box and see the potential in materials that are often overlooked. Embrace the thrill of creativity and innovation as you bring new life to what others may consider waste!",
             "eventImage": "./imgs/Events/RustToRiches.png",
             "isReversed": true,
-            "eventLink": "#"
+            "eventLink": "https://docs.google.com/forms/d/e/1FAIpQLSfeO918deB3eiRuMKlTXyzgxgzTM41qYMLr6UxaA3ctGCms7w/viewform?usp=publish-editor"
+
         },
         {
             "eventName": "Campus in Colors",
@@ -61,7 +62,7 @@
             "eventDescription": "Participants are challenged to design and create a one-of-a-kind fashion piece that reflects their unique style and creativity. After crafting their masterpiece, designers will have the opportunity to showcase their work on the runway, wearing their own creations. The event celebrates the fusion of artistry and fashion, with each participant bringing their vision to life for a chance to win the title of the ultimate fashion designer. The competition is a platform for innovation, self-expression, and style.",
             "eventImage": "./imgs/Events/Vogue-e-Bella.png",
             "isReversed": true,
-            "eventLink": "#"
+            "eventLink": "https://docs.google.com/forms/d/e/1FAIpQLSfIMMq5G5fnRmPr_2fyRN2I6b4VVlxwvhzkWA-cclNT9hI-Og/viewform?usp=publish-editor"
         },
         {
             "eventName": "Art of Odyssey",
