@@ -10,11 +10,11 @@ const Footer = () => {
         {/* Left Section: Branding & Address */}
         <div className="footer-section branding">
           <div className="logo-placeholder">
-            <img src="/imgs/kriti.png" alt="KRITI 2026" />
+            <img src="/imgs/kriti_foot.jpeg" alt="KRITI 2026" />
           </div>
           <address>
-            IIEST SHIBPUR, PO: Botanic Garden, Botanical Garden Road,<br />
-            IIEST Shibpur, Howrah-711103, West Bengal
+            IIEST, SHIBPUR, PO: Botanic Garden, Botanical Garden Road,<br />
+            IIEST, Shibpur, Howrah-711103, West Bengal
           </address>
           <p className="copyright">© kriti.in 2026. All rights reserved</p>
         </div>
@@ -46,10 +46,10 @@ const Footer = () => {
         <div className="footer-section socials">
           <h3>Visit us Virtually</h3>
           <div className="social-icons">
-            <a href="scageiiestshibpur@gmail.com" className="icon-circle"><FaEnvelope /></a>
-            <a href="https://www.instagram.com/scage_iiests/" className="icon-circle"><FaInstagram /></a>
-            <a href="https://kriti.scage.in/" className="icon-circle"><FaGlobe /></a>
-            <a href="https://www.facebook.com/share/1Pm2M8X6nk" className="icon-circle"><FaFacebook /></a>
+            <a href="mailto:scageiiestshibpur@gmail.com" className="icon-circle"><FaEnvelope /></a>
+            <a href="https://www.instagram.com/scage_iiests/" className="icon-circle" target='_blank'><FaInstagram /></a>
+            <a href="https://kriti.scage.in/" className="icon-circle" target='_blank'><FaGlobe /></a>
+            <a href="https://www.facebook.com/share/1Pm2M8X6nk" target='_blank' className="icon-circle"><FaFacebook /></a>
           </div>
         </div>
 

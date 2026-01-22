@@ -222,12 +222,12 @@
   }
 
   .hero .content .title {
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 4rem;
   }
 
   .hero .content .tagline {
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 2rem;
   }
 
@@ -265,7 +265,11 @@
 
 
 @media (max-width: 768px) {
-    .hero {
+  .hero .content .title {
+    font-size: 3rem;
+    line-height: 4rem;
+    }  
+  .hero {
         flex-direction: column;
     }
 
@@ -274,10 +278,6 @@
         align-self: flex-end;
         text-align: right;
         font-size: 0.9rem;
-    }
-
-    .hero .title {
-        margin: 20px 0;
     }
 
     .rainbow {
@@ -299,12 +299,24 @@
 }
 
 @media (max-width: 480px) {
-    .hero .title {
-        gap: 2px; /* Tighten gaps on mobile */
+    .hero .content .title {
+        /* Reduce gap and ensure letters don't wrap */
+        gap: 0.1rem; 
+        justify-content: flex-start;
+        padding-top: 1rem; /* Adjust padding if it's too high */
     }
-    
+
     .letter {
-        font-size: 16vw; /* Carefully tuned to fit 5 letters on any phone */
-        padding: 4px;   /* Thinner boxes for mobile */
+        /* CHANGE: Reduce from 16vw to 12vw or 10vw */
+        font-size: 10vw !important; 
+        padding: 0.2rem 0.4rem !important; /* Thinner padding */
+        margin: 0 1px !important;
+        border-width: 1px !important; /* Thinner borders for mobile */
+    }
+
+    /* Optional: If the tagline is also too big, shrink it here */
+    .hero .content .tagline {
+        font-size: 1rem;
+        line-height: 1rem;
     }
 }

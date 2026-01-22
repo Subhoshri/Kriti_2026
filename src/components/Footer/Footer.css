@@ -3,6 +3,20 @@
   color: #fff;
   padding: 40px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+    z-index: 9999 !important; /* Forces footer above everything else */
+    pointer-events: auto !important; /* Ensures the footer is "clickable" */
+}
+
+.social-icons {
+    position: relative;
+    z-index: 10000;
+}
+
+.icon-circle {
+    display: flex !important; /* Ensures the click area isn't 0px */
+    cursor: pointer !important;
+    pointer-events: auto !important;
 }
 
 .footer-content {
@@ -81,6 +95,19 @@
   display: flex;
   justify-content: flex-end;
   gap: 15px;
+}
+
+.social-icons a {
+    display: flex; /* Ensures the click area fills the entire circle */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer !important; /* Forces the 'hand' cursor to appear */
+    pointer-events: auto !important; /* Re-enables clicking if inherited styles disabled it */
+}
+
+.icon-circle:hover {
+    transform: scale(1.1);
+    background-color: #4b70e2; /* Slightly brighter blue on hover */
 }
 
 .icon-circle {

@@ -6,7 +6,7 @@ const EventsHeroSection = () => {
         <section className="EventsHero-section">
             <div className="details">
                 <div className="item highlight">30th Jan, 31st Jan and 1st Feb, 2026</div>
-                <div className="item">Venue: IIEST Shibpur</div>
+                <div className="item">Venue: IIEST, Shibpur</div>
                 <div className="item">Organised By: SCAGE</div>
             </div>
             <div className="text">
