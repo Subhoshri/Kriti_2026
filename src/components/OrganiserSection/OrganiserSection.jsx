@@ -26,7 +26,7 @@ const organisersData = [
 
 	{
 		name: "Sangeet Dhabare",
-		shortIntro: "Finance",
+		shortIntro: "Finance Coordinator",
 		profileImg: "sangeet_gunwant_dhabare.png",
 	},
 	{
