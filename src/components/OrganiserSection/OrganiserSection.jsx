@@ -29,7 +29,7 @@ const organisersData = [
 		shortIntro: "Finance",
 		profileImg: "sangeet_gunwant_dhabare.png",
 	},
-{
+	{
 		name: "Dhruv Kumar",
 		shortIntro: "Joint Coordinator",
 		profileImg: "dhruv1.jpeg",
@@ -39,6 +39,11 @@ const organisersData = [
 		shortIntro: "Joint Coordinator",
 		profileImg: "supriyo.jpeg",
 	},
+	{
+		name: "Bidisha Garai",
+		shortIntro: "Assistant Joint Secretary",
+		profileImg: "bidisha.jpeg",
+	}
 	
 ];
 
